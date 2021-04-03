@@ -1,0 +1,17 @@
+.header-image {
+  background-image: url('./images/backdrop.jpg');
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 5% 0 5% 0;
+}
+
+.header {
+  background-color: white;
+  margin: 5% 10% 10% 10%;
+  padding: 20% 0 20% 0;
+  opacity: .7;
+  border-radius: 10%/20%;
+  text-align: center;
+}
+
