@@ -10,6 +10,7 @@ body {
   background-image: url('../images/backdropCropped.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header {
   width: 100%;
@@ -25,9 +26,49 @@ body {
 .landing-page-form > input, .landing-page-form > label {
   margin: 4%;
 }
+#frontNine {
+  padding: 5% 0 0 0;
+}
 .header-two {
   font-size: 25px;
 }
 .hole-number {
-  font-size: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 0 0 0 1%;
+}
+.hole-par {
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 18%;
+  text-align: center;
+}
+#holes {
+  background-color: whitesmoke;
+  margin: 15% 4% 15% 4%;
+  padding: 3.5%;
+  border-radius: 12%/1%;
+  opacity: .8;
+}
+#hole {
+  margin: 3.5%;
+}
+#player-block {
+  padding: 3.5%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#player-name {
+  padding: 2.5% 0 2.5% 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 0 0 1% 1%;
+  width: 25%
+}
+#hole-score {
+  width: 25%;
+  margin: 2.5% 0 2.5% 0;
 }
