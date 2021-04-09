@@ -1,0 +1,33 @@
+@font-face {
+  font-family: ville-regular;
+  src: url('../fonts/Baskervville-Regular.ttf')
+}
+@font-face {
+  font-family: ville-italic;
+  src: url('../fonts/Baskervville-Italic.ttf')
+}
+body {
+  background-image: url('../images/backdropCropped.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  /* need to be flex centered after logo and extras are added */
+}
+.landing-page-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3.5% 0 3.5% 0%
+}
+.landing-page-form > input, .landing-page-form > label {
+  margin: 4%;
+}
+.header-two {
+  font-size: 25px;
+}
+.hole-number {
+  font-size: 15px;
+}

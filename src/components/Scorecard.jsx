@@ -1,95 +1,71 @@
 import React from 'react'
 
-const Scorecard = () => {
-  return(
-    <>
-    <article class="front9">
-      <div class="hole">
-          <span>Front</span>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>Out</span>
-      </div>
-      <div class="par">
-          <span>Par</span>
-          <span>3</span>
-          <span>5</span>
-          <span>4</span>
-          <span>4</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>4</span>
-          <span>4</span>
-          <span>36</span>
-      </div>
-      <div class="score">
-          <span>Score</span>
-          <span>3</span>
-          <span>5</span>
-          <span>4</span>
-          <span>5</span>
-          <span>3</span>
-          <span>3</span>
-          <span>5</span>
-          <span>4</span>
-          <span>4</span>
-          <span class="sub">36</span>
-      </div>
-  </article>
-  {/* <article class="back9">
-      <div class="hole">
-          <span>Back</span>
-          <span>10</span>
-          <span>11</span>
-          <span>12</span>
-          <span>13</span>
-          <span>14</span>
-          <span>15</span>
-          <span>16</span>
-          <span>17</span>
-          <span>18</span>
-          <span>In</span>
-          <span>Total</span>
-      </div>
-      <div class="par">
-          <span>Par</span>
-          <span>5</span>
-          <span>3</span>
-          <span>4</span>
-          <span>3</span>
-          <span>5</span>
-          <span>4</span>
-          <span>4</span>
-          <span>3</span>
-          <span>5</span>
-          <span>36</span>
-      <span>72</span>
-      </div>
-      <div class="score">
-          <span>Score</span>
-          <span>6</span>
-          <span>2</span>
-          <span>5</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>4</span>
-          <span>3</span>
-          <span>6</span>
-          <span class="sub">41</span>
-          <span class="total">77</span>
-      </div>
-    </article> */}
-    </>
-  )
-}
 
-export default Scorecard
+export default class Scorecard extends React.Component {
+  constructor() {
+    super()
+    this.state = [
+      [
+        {
+          number: 'One',
+          par: 3
+        },
+        {
+          number: 'Two',
+          par: 3
+        },
+        {
+          number: 'Three',
+          par: 4
+        },
+        {
+          number: 'Four',
+          par: 5
+        },
+        {
+          number: 'Five',
+          par: 4
+        },
+        {
+          number: 'Six',
+          par: 2
+        },
+        {
+          number: 'Seven',
+          par: 4
+        },
+        {
+          number: 'Eight',
+          par: 3
+        },
+        {
+          number: 'Nine',
+          par: 4
+        }     
+      ]
+    ]  
+  }
+
+  componentDidMount() {
+    console.log(this.state)
+  }
+  render() {
+    return(
+      <>
+        <div id='holes'>
+          <div id='frontNine'>
+            <h2 className='header-two'>Front</h2>
+          {this.state[0].map(hole => {
+            return (
+              <div id='hole'>
+                <p className='hole-number'>{hole.number}</p>
+                <p className='hole-par'>Par: {hole.par}</p>
+              </div>
+            )
+          })}
+          </div>
+        </div>
+      </>
+    )
+  }
+}
