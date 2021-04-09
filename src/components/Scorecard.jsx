@@ -8,100 +8,175 @@ export default class Scorecard extends React.Component {
       [
         {
           number: 'One',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Two',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Three',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Four',
-          par: 5
+          par: 5,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Five',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Six',
-          par: 2
+          par: 2,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Seven',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Eight',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Nine',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         }     
       ],
       [
         {
           number: 'Ten',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Eleven',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Twelve',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Thirteen',
-          par: 5
+          par: 5,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Fourteen',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Fifteen',
-          par: 2
+          par: 2,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Sixteen',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Seventeen',
-          par: 3
+          par: 3,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         },
         {
           number: 'Eighteen',
-          par: 4
+          par: 4,
+          playerOneScore: 0,
+          playerTwoScore: 0,
+          playerThreeScore: 0,
+          playerFourScore: 0,
         }     
       ],
       [
         {
           name: 'playerOne',
-          score: 0
+          totalScore: 0
         },
         {
           name: 'playerTwo',
-          score: 0
+          totalScore: 0
         },
         {
           name: 'playerThree',
-          score: 0
+          totalScore: 0
         },
         {
           name: 'playerFour',
-          score: 0
+          totalScore: 0
         },
       ]
     ]  
   }
 
+  updateScore = (player) => {
+    console.log(player)
+  }
   componentDidMount() {
     console.log(this.state[0])
   }
@@ -120,17 +195,12 @@ export default class Scorecard extends React.Component {
                       {this.state[2].map(player => {
                         return(
                           <>
-                            <p id='player-name'>{player.name}:</p>
-                            <select id='hole-score'>
-                              <option value=''></option>
-                              <option value='-3'>-3</option>
-                              <option value='-2'>-2</option>
-                              <option value='-1'>-1</option>
-                              <option value='Par'>Par</option>
-                              <option value='+1'>+1</option>
-                              <option value='+2'>+2</option>
-                              <option value='+3'>+3</option>
-                            </select>
+                            <p id='player-name'>{player.name}: {player.score}</p>
+                            <button>+</button>
+                            <form>
+
+                            </form>
+                            <button>-</button>
                           </>
                         )                      
                       })}
@@ -151,16 +221,11 @@ export default class Scorecard extends React.Component {
                         return(
                           <>
                             <p id='player-name'>{player.name}:</p>
-                            <select id='hole-score'>
-                              <option value=''></option>
-                              <option value='-3'>-3</option>
-                              <option value='-2'>-2</option>
-                              <option value='-1'>-1</option>
-                              <option value='Par'>Par</option>
-                              <option value='+1'>+1</option>
-                              <option value='+2'>+2</option>
-                              <option value='+3'>+3</option>
-                            </select>
+                            <button>+</button>
+                            <form>
+
+                            </form>
+                            <button>-</button>
                           </>
                         )
                       })}
