@@ -194,14 +194,14 @@ export default class Scorecard extends React.Component {
                     <div id='player-block'>
                       {this.state[2].map(player => {
                         return(
-                          <>
+                          <div className='player-int'>
                             <p id='player-name'>{player.name}: {player.score}</p>
                             <button>+</button>
                             <form>
 
                             </form>
                             <button>-</button>
-                          </>
+                          </div>
                         )                      
                       })}
                     </div>
