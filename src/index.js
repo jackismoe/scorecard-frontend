@@ -12,6 +12,7 @@ import './stylesheets/mediaQueries.scss';
 import LandingPageForm from './components/LandingPageForm.jsx'
 import Header from './components/Header.jsx'
 import Scorecard from './components/Scorecard.jsx'
+import HoleMenu from './components/HoleMenu.jsx'
 
 // const BASE_URL = 'http://localhost:3000'
 // const store = createStore()
@@ -20,6 +21,7 @@ ReactDOM.render(
   <Router>
     <Route exact path='/' component={Header}/>
     <Route exact path='/' component={LandingPageForm}/>
+    <Route path='/scorecard' component={HoleMenu}/>
     <Route exact path='/scorecard' component={Scorecard}/>
   </Router>,
   document.getElementById('root')
