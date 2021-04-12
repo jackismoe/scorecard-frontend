@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './stylesheets/index.scss';
 import './stylesheets/reset.scss';
 import './stylesheets/mediaQueries.scss';
+import './stylesheets/scorecard.scss';
 
 import LandingPageForm from './components/LandingPageForm.jsx'
 import Header from './components/Header.jsx'
