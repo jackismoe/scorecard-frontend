@@ -26,3 +26,18 @@ body {
 .landing-page-form > input, .landing-page-form > label {
   margin: 4%;
 }
+.main-menu {
+  width: 15%;
+  height: 15%;
+  background-image: url('../images/menu.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 5% 0 0 5%;
+}
+.header, .header-with-holes {
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu:hover {
+  border-bottom: 1px solid black;
+}
