@@ -1,25 +1,30 @@
 // golf club logo that will be a menu
 import React from 'react'
 
-const HoleMenu = () => {
-  const handleMenuClick = () => {
-    console.log('hole click')
-    let holes = document.querySelector('#holes')
-    if (holes.style.right == '75%') {
-      holes.style.right = '0%'
-    } else {
-      holes.style.right = '75%'
+class HoleMenuIcon extends React.Component{
+  constructor() {
+    super() 
+    this.state = {
+      isIn: true,
+      isOut: false
     }
   }
-  return (
-    <div className='hole-menu-container'>
-      <div className='hole-menu' onClick={handleMenuClick}>
-        <br/>
-        <br/>
-        <br/>
+
+  handleMenuClick = () => {
+
+  }
+  
+  render() {
+    return (
+      <div className='hole-menu-container'>
+        <div className='hole-menu' onClick={this.handleMenuClick}>
+          <br/>
+          <br/>
+          <br/>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
-export default HoleMenu
+export default HoleMenuIcon
