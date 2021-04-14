@@ -3,7 +3,13 @@ import React from 'react'
 
 const HoleMenu = () => {
   const handleMenuClick = () => {
-    console.log('click')
+    console.log('hole click')
+    let holes = document.querySelector('#holes')
+    if (holes.style.right == '75%') {
+      holes.style.right = '0%'
+    } else {
+      holes.style.right = '75%'
+    }
   }
   return (
     <div className='hole-menu-container'>

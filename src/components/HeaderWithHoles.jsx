@@ -1,12 +1,12 @@
 import React from 'react'
-import MainMenu from './MainMenu'
-import HoleMenu from './HoleMenu'
+import MainMenuIcon from './MainMenuIcon'
+import HoleMenuIcon from './HoleMenuIcon'
 
 const HeaderWithHoles = () => {
   return (
     <div className='header-with-holes'>
-      <MainMenu/>
-      <HoleMenu/>
+      <MainMenuIcon/>
+      <HoleMenuIcon/>
     </div>
   )
 }

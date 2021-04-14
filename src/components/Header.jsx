@@ -1,11 +1,11 @@
 import React from 'react'
-import MainMenu from './MainMenu'
+import MainMenuIcon from './MainMenuIcon'
 
 
 const Header = () => {
   return (
     <div className='header'>
-        <MainMenu/>
+        <MainMenuIcon/>
     </div>
   )
 }

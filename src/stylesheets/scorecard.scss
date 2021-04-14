@@ -1,3 +1,13 @@
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(75%);
+  }
+}
+
 #frontNine {
   padding: 5% 0 0 0;
 }
@@ -24,6 +34,7 @@
   padding: 3.5%;
   border-radius: 12%/1%;
   opacity: .8;
+  position: relative;
 }
 #hole {
   margin: 3.5%;
@@ -63,7 +74,7 @@
   align-items: center;
 }
 .hole-menu:hover {
-  border-bottom: 1px solid black;
+    cursor: pointer;
 }
 button {
   width: 10%;

@@ -27,12 +27,13 @@ body {
   margin: 4%;
 }
 .main-menu {
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
   background-image: url('../images/menu.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 5% 0 0 5%;
+  margin: 8% 0 0 5%;
+  position: relative;
 }
 .header, .header-with-holes {
   display: flex;
