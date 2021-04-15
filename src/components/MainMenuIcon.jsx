@@ -1,27 +1,15 @@
 import React from 'react'
 
 class MainMenuIcon extends React.Component{
-  constructor() {
-    super() 
-    this.state = {
-      isIn: true,
-      isOut: false
-    }
-  }
-  
   handleMenuClick = () => {
-    const pushHolesOut = () => {
-      let holes = document.querySelector('#holes')
+    let holes = document.querySelector('#holes')
+
+    if (holes.style.left == '0') {
+      holes.style.left = '75%'
+    } else if (holes.style.left == 0) {
+      debugger
       holes.style.left = '75%'
     }
-
-    const pushHolesIn = () => {
-      let holes = document.querySelector('#holes')
-      holes.style.left = '0'
-    }
-    
-
-
   }
 
   render() {

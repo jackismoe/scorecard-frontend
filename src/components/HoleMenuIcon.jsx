@@ -2,18 +2,9 @@
 import React from 'react'
 
 class HoleMenuIcon extends React.Component{
-  constructor() {
-    super() 
-    this.state = {
-      isIn: true,
-      isOut: false
-    }
-  }
-
   handleMenuClick = () => {
-
   }
-  
+
   render() {
     return (
       <div className='hole-menu-container'>
