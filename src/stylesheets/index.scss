@@ -26,19 +26,34 @@ body {
 .landing-page-form > input, .landing-page-form > label {
   margin: 4%;
 }
-.main-menu {
-  width: 10%;
-  height: 10%;
+.main-menu-icon {
+  width: 35%;
+  height: 45%;
   background-image: url('../images/menu.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 8% 0 0 5%;
+  margin: 15% 0 0 10%;
   position: relative;
 }
 .header, .header-with-holes {
   display: flex;
   justify-content: space-between;
 }
-.main-menu:hover {
+.main-menu-icon:hover {
   border-bottom: 1px solid black;
+}
+.main-menu-container {
+  width: 40%;
+}
+.main-menu {
+  margin: 10.8% 0 0 0;
+  position: absolute;
+  background-color: black;
+  height: 75%;
+  width: 55%;
+  border-top-right-radius: 12% 3%;
+  border-bottom-right-radius: 12% 3%;
+  visibility: hidden;
+  color: white;
+  padding: 10% 0 0 5%;
 }
