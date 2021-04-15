@@ -3,8 +3,13 @@ import React from 'react'
 
 class HoleMenuIcon extends React.Component{
   handleMenuClick = () => {
+    let holes = document.querySelector('#holes')
+    if ((holes.style.left == '') || (holes.style.left == '0px') || holes.style.left == '0%') {
+      holes.style.left = '-40%'
+    } else if ((holes.style.left !== '') || (holes.style.left !== '0px')) {
+      holes.style.left = '0%'
+    }
   }
-
   render() {
     return (
       <div className='hole-menu-container'>

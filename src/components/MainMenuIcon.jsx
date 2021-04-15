@@ -3,12 +3,10 @@ import React from 'react'
 class MainMenuIcon extends React.Component{
   handleMenuClick = () => {
     let holes = document.querySelector('#holes')
-
-    if (holes.style.left == '0') {
-      holes.style.left = '75%'
-    } else if (holes.style.left == 0) {
-      debugger
-      holes.style.left = '75%'
+    if ((holes.style.left == '') || (holes.style.left == '0px') || holes.style.left == '0%') {
+      holes.style.left = '60%'
+    } else if ((holes.style.left !== '') || (holes.style.left !== '0px')) {
+      holes.style.left = '0%'
     }
   }
 

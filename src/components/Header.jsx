@@ -1,13 +1,16 @@
 import React from 'react'
+import HoleMenuIcon from './HoleMenuIcon'
 import MainMenuIcon from './MainMenuIcon'
 
 
-const Header = () => {
-  return (
-    <div className='header'>
-        <MainMenuIcon/>
-    </div>
-  )
+class Header extends React.Component {
+  render() {
+    return (
+      <div className='header'>
+          <MainMenuIcon/>
+      </div>
+    )
+  }
 }
 
 export default Header
