@@ -6,7 +6,7 @@ class MainMenuIcon extends React.Component{
     let holes = document.querySelector('#holes')
     let mainMenu = document.querySelector('.main-menu')
     let holeMenu = document.querySelector('.hole-menu')
-    if ((holes.style.left === '') || (holes.style.left === '0px') || holes.style.left === '0%' || holes.style.left == '-40%') {
+    if ((holes.style.left === '') || (holes.style.left === '0px') || holes.style.left === '0%' || holes.style.left === '-40%') {
       holes.style.left = '60%'
       mainMenu.style.visibility = 'visible'
       if (holeMenu.style.visibility !== 'hidden') {holeMenu.style.visibility = 'hidden'}
