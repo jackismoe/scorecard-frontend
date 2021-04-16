@@ -10,9 +10,10 @@ import './stylesheets/reset.scss';
 import './stylesheets/mediaQueries.scss';
 import './stylesheets/scorecard.scss';
 
+// commented for prod tests with netlify; need to find fix for router to be compatible
 // import LandingPageForm from './components/LandingPageForm.jsx'
-import HeaderWithHoles from './components/HeaderWithHoles.jsx'
 // import Header from './components/Header.jsx'
+import HeaderWithHoles from './components/HeaderWithHoles.jsx'
 import Scorecard from './components/Scorecard.jsx'
 import HoleMenu from './components/HoleMenu.jsx'
 

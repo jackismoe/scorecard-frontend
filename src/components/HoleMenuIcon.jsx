@@ -5,9 +5,11 @@ class HoleMenuIcon extends React.Component{
   handleMenuClick = () => {
     let holes = document.querySelector('#holes')
     let holeMenu = document.querySelector('.hole-menu')
-    if ((holes.style.left === '') || (holes.style.left === '0px') || holes.style.left === '0%') {
+    let mainMenu = document.querySelector('.main-menu')
+    if ((holes.style.left === '') || (holes.style.left === '0px') || holes.style.left === '0%' || holes.style.left === '60%') {
       holes.style.left = '-40%'
       holeMenu.style.visibility = 'visible'
+      if (mainMenu.style.visibility !== 'hidden') {mainMenu.style.visibility = 'hidden'}
     } else if ((holes.style.left !== '') || (holes.style.left !== '0px')) {
       holes.style.left = '0%'
       holeMenu.style.visibility = 'hidden'
