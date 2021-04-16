@@ -174,6 +174,17 @@ export default class Scorecard extends React.Component {
     ]  
   }
 
+  centerHoles = () => {
+    let holes = document.querySelector('#holes')
+    let holesMenu = document.querySelector('.hole-menu')
+    let mainMenu = document.querySelector('.main-menu')
+    if (holes.style.left !== '' || holes.style.left !== 0 || holes.style.left !== '0%') {
+      holes.style.left = '0%'
+      if (holesMenu.style.visibility !== 'hidden') {holesMenu.style.visibility = 'hidden'}
+      if (mainMenu.style.visibility !== 'hidden') {mainMenu.style.visibility = 'hidden'}
+    }
+  }
+
   updateScore = (player) => {
     console.log(player)
   }
@@ -183,7 +194,7 @@ export default class Scorecard extends React.Component {
   render() {
     return(
       <>
-        <div key={uuid()} id='holes'>
+        <div key={uuid()} id='holes' onClick={this.centerHoles}>
           <div id='frontNine'>
             <h2 className='header-two'>Front</h2>
             {this.state[0].map(hole => {
