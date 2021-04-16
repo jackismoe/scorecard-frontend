@@ -22,11 +22,12 @@ import HoleMenu from './components/HoleMenu.jsx'
 
 ReactDOM.render(
   <Router>
-    <Route exact path='/' component={Header}/>
-    <Route exact path='/' component={LandingPageForm}/>
-    <Route path='/scorecard' component={HeaderWithHoles}/>
-    <Route path='/scorecard' component={HoleMenu}/>
-    <Route path='/scorecard' component={Scorecard}/>
+    {/* commented for prod tests with netlify; need to find fix for router to be compatible */}
+    {/* <Route exact path='/' component={Header}/>
+    <Route exact path='/' component={LandingPageForm}/> */}
+    <Route path='/' component={HeaderWithHoles}/>
+    <Route path='/' component={HoleMenu}/>
+    <Route path='/' component={Scorecard}/>
   </Router>,
   document.getElementById('root')
 );
