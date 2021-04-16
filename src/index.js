@@ -10,9 +10,9 @@ import './stylesheets/reset.scss';
 import './stylesheets/mediaQueries.scss';
 import './stylesheets/scorecard.scss';
 
-import LandingPageForm from './components/LandingPageForm.jsx'
+// import LandingPageForm from './components/LandingPageForm.jsx'
 import HeaderWithHoles from './components/HeaderWithHoles.jsx'
-import Header from './components/Header.jsx'
+// import Header from './components/Header.jsx'
 import Scorecard from './components/Scorecard.jsx'
 import HoleMenu from './components/HoleMenu.jsx'
 
