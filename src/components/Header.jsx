@@ -1,5 +1,4 @@
 import React from 'react'
-import HoleMenuIcon from './HoleMenuIcon'
 import MainMenuIcon from './MainMenuIcon'
 
 

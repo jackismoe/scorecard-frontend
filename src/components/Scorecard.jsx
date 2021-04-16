@@ -183,7 +183,7 @@ export default class Scorecard extends React.Component {
   render() {
     return(
       <>
-        <div id='holes'>
+        <div key={uuid()} id='holes'>
           <div id='frontNine'>
             <h2 className='header-two'>Front</h2>
             {this.state[0].map(hole => {
@@ -194,7 +194,7 @@ export default class Scorecard extends React.Component {
                     <div id='player-block'>
                       {this.state[2].map(player => {
                         return(
-                          <div className='player-int'>
+                          <div key={uuid()} className='player-int'>
                             <p id='player-name'>{player.name}: {player.score}</p>
                             <button>+</button>
                             <form>
@@ -209,7 +209,7 @@ export default class Scorecard extends React.Component {
               )
             })}
           </div>
-          <div id='backNine'>
+          <div key={uuid()} id='backNine'>
             <h2 className='header-two'>Back</h2>
             {this.state[1].map(hole => {
               return (
@@ -219,14 +219,14 @@ export default class Scorecard extends React.Component {
                     <div id='player-block'>
                       {this.state[2].map(player => {
                         return(
-                          <>
+                          <div key={uuid()}>
                             <p id='player-name'>{player.name}:</p>
                             <button>+</button>
                             <form>
 
                             </form>
                             <button>-</button>
-                          </>
+                          </div>
                         )
                       })}
                     </div>
