@@ -8,12 +8,12 @@ class HoleMenu extends React.Component {
     let holeMenu = document.querySelector('.hole-menu')
     if (holeLinks.style.visibility === 'visible') {
       holeLinks.style.visibility = 'hidden'
-      holeMenu.style.height = '40%'
+      holeMenu.style.height = '50%'
       holeMenu.style.borderBottomLeftRadius = '12% 5%'
       holeMenu.style.borderTopLeftRadius = '12% 5%'
     } else {
       holeLinks.style.visibility = 'visible'
-      holeMenu.style.height = '90%'
+      holeMenu.style.height = '100%'
       holeMenu.style.borderTopLeftRadius = '12% 2.5%'
       holeMenu.style.borderBottomLeftRadius = '12% 2.5%'
     }
