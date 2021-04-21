@@ -19,10 +19,12 @@ class HoleMenu extends React.Component {
         <div className='hole-menu'>
           <div className='hole-menu-headers'>
             <h2 className='course-name'><i>Brasstown Valley & Resort</i></h2>
-            <h4 className='avg-score'>Average Score: 82.5</h4>
-            <h4 className='avg-handicap'>Average Handicap: 16</h4>
-            <h4 className='previous-score'>Previous Score: 87</h4>
-            <h4 className='current-handicap'>Current Handicap: 21</h4>
+            <div className='course-stats'>
+              <h4 className='avg-score'>Average Score: 82.5</h4>
+              <h4 className='avg-handicap'>Average Handicap: 16</h4>
+              <h4 className='previous-score'>Previous Score: 87</h4>
+              <h4 className='current-handicap'>Current Handicap: 21</h4>
+            </div>
           </div>
 
           <div className='hole-menu-options'>
@@ -61,8 +63,9 @@ class HoleMenu extends React.Component {
                 <option value='18'>18</option>
               </select>
             </div>
+            <div className='button-container'>
               <button className='reset-button' onClick={this.resetDropDowns}>Reset</button>
-
+            </div>
           </div>
         </div>
       </div>
