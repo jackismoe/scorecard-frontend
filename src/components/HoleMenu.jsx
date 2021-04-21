@@ -3,7 +3,16 @@ import React from 'react'
 class HoleMenu extends React.Component {
   // jump to hole
   // filter by player
-  
+  handlePlayerChange = id => {
+    console.log(id.target.value)
+    // needs to change state to show only desired player
+    // must work with the other sorting parameter 
+  }
+  handleHoleChange = id => {
+    console.log(id.target.value)
+    // needs to change state to only show desired hole
+    // must work with the other sorting parameter 
+  }
   render() {
     return(
       <div className='hole-menu-con-two'>
@@ -19,18 +28,18 @@ class HoleMenu extends React.Component {
           <div className='hole-menu-options'>
             <div className='filter-player-container'>
               <p className='filter-player-link'>Filter by Player</p>
-              <select>
+              <select onChange={this.handlePlayerChange}>
                 <option value=''></option>
-                <option value='playerOne'>playerOne</option>
-                <option value='playerTwo'>playerTwo</option>
-                <option value='playerThree'>playerThree</option>
-                <option value='playerFour'>playerFour</option>
+                <option value='1'>playerOne</option>
+                <option value='2'>playerTwo</option>
+                <option value='3'>playerThree</option>
+                <option value='4'>playerFour</option>
               </select>
             </div>
 
             <div className='jump-hole-container'>
               <p className='jump-hole-link'>Jump to Hole</p>
-              <select>
+              <select onChange={this.handleHoleChange}>
                 <option value=''></option>
                 <option value='1'>1</option>
                 <option value='2'>2</option>
@@ -52,7 +61,7 @@ class HoleMenu extends React.Component {
                 <option value='18'>18</option>
               </select>
             </div>
-              <button className='reset-button'onClick=''>Reset</button>
+              <button className='reset-button' onClick={this.resetDropDowns}>Reset</button>
 
           </div>
         </div>
