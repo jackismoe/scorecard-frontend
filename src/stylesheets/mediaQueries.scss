@@ -1,8 +1,11 @@
+// $background-color: rgb(65,176,17);
+$background-color: black;
+
 /* Tiny Screen */
 @media only screen and (max-width: 375px) {
   body {
     // background-image: url('../images/backdropCropped.jpg');
-    background-color: rgb(65,176,17);
+    background-color: $background-color;
     background-size: 120%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,7 +16,7 @@
 @media screen and (min-width: 675px) and (max-width: 1024px) {
   body {
     // background-image: url('../images/backdrop.jpg');
-    background-color: rgb(65,176,17);
+    background-color: $background-color;
     background-size: 255%;
     background-position-y: 30%;
     background-position-x: 30%;
@@ -24,7 +27,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
   body {
     // background-image: url('../images/backdrop.jpg');
-    background-color: green;
+    background-color: $background-color;
     background-size: 255%;
     background-position-y: 20%;
     background-position-x: 20%;
@@ -35,7 +38,7 @@
 @media screen and (min-width: 1301px) {
   body {
     // background-image: url('../images/backdrop.jpg');
-    background-color: rgb(65,176,17);
+    background-color: $background-color;
     background-size: 200%;
     background-position-y: 20%;
     background-repeat: no-repeat;
@@ -45,7 +48,7 @@
 @media screen and (min-width: 1800px) {
   body {
     // background-image: url('../images/backdrop.jpg');
-    background-color: rgb(65,176,17);
+    background-color: $background-color;
     background-size: 150% auto;
     background-position-y: 20%;
     background-repeat: no-repeat;
@@ -55,7 +58,7 @@
 @media screen and (min-width: 2100px) {
   body {
     // background-image: url('../images/backdrop.jpg');
-    background-color: rgb(65,176,17);
+    background-color: $background-color;
     /* background-size: 150% auto; */
     background-position-y: 20%;
     background-repeat: no-repeat;

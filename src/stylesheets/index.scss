@@ -1,3 +1,7 @@
+// $header-color: rgb(65,176,17);
+$header-color: gray;
+$menu-color: gray;
+
 @font-face {
   font-family: ville-regular;
   src: url('../fonts/Baskervville-Regular.ttf')
@@ -8,7 +12,7 @@
 }
 body {
   // background-image: url('../images/backdropCropped.jpg');
-  background-color: green;
+  background-color:  $header-color;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -35,10 +39,23 @@ body {
   background-size: 100%;
   margin: 15% 0 0 10%;
   position: relative;
+  overflow: visible;
 }
 .header, .header-with-holes {
+  background-color:  $header-color;
+  // background-image: url('../images/backdropCropped.jpg');
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: auto;
+  width: 100%;
+  margin: 0 0 10% 0;
+  z-index: 1;
+  // overflow: hidden;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius:5%;
+  box-shadow: 0px 2px;
 }
 .main-menu-container {
   width: 40%;
@@ -46,12 +63,15 @@ body {
 .main-menu {
   margin: 10.8% 0 0 0;
   position: absolute;
-  background-color: black;
-  height: 75%;
-  width: 55%;
-  border-top-right-radius: 12% 3%;
-  border-bottom-right-radius: 12% 3%;
+  background-color: $menu-color;
+  height: auto;
+  width: 50%;
+  border-top-right-radius: 12% 20%;
+  border-bottom-right-radius: 12% 20%;
   visibility: hidden;
   color: white;
-  padding: 10% 0 0 5%;
+  padding: 10% 0 10% 5%;
+  margin: 25% 0 0 0;
+  top: 0;
+  position: fixed;
 }
