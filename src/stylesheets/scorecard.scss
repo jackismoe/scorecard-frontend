@@ -70,9 +70,9 @@
   background-color: black;
   color: white;
   height: 50%;
-  border-bottom-left-radius: 12% 5%;
-  border-top-left-radius: 12% 5%;
-  padding: 10% 0 0 5%;
+  border-bottom-left-radius: 12% 8%;
+  border-top-left-radius: 12% 8%;
+  padding: 6% 2% 0 5%;
   visibility: hidden;
 }
 .avg-score, .avg-handicap, .previous-score, .current-handicap {
@@ -98,17 +98,15 @@
   margin-bottom: 5%;
   border-left: 1px solid white;
 }
-.hole-options-title {
-  font-size: 15px;
-}
-.hole-link-container {
-  visibility: hidden;
-  margin: 0 0 0 15%;
-}
-.hole-link, .player-link {
-  margin: 2% 0 5% 5%; 
-  text-decoration: underline;
-}
-button {
-  width: 10%;
+
+.reset-button {
+  width: 40%;
+  margin: 4%;
+  border: none;
+  color: black;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8%/15%;
 }

@@ -3,21 +3,6 @@ import React from 'react'
 class HoleMenu extends React.Component {
   // jump to hole
   // filter by player
-  showHoleLinks = () => {
-    let holeLinks = document.querySelector('.hole-link-container')
-    let holeMenu = document.querySelector('.hole-menu')
-    if (holeLinks.style.visibility === 'visible') {
-      holeLinks.style.visibility = 'hidden'
-      holeMenu.style.height = '50%'
-      holeMenu.style.borderBottomLeftRadius = '12% 5%'
-      holeMenu.style.borderTopLeftRadius = '12% 5%'
-    } else {
-      holeLinks.style.visibility = 'visible'
-      holeMenu.style.height = '100%'
-      holeMenu.style.borderTopLeftRadius = '12% 2.5%'
-      holeMenu.style.borderBottomLeftRadius = '12% 2.5%'
-    }
-  }
   
   render() {
     return(
@@ -30,35 +15,45 @@ class HoleMenu extends React.Component {
             <h4 className='previous-score'>Previous Score: 87</h4>
             <h4 className='current-handicap'>Current Handicap: 21</h4>
           </div>
+
           <div className='hole-menu-options'>
-            <p className='filter-player-link'>Filter by Player</p>
-              <div className='player-link-container'>
-                <p className='player-link'>jackson</p>
-                <p className='player-link'>ren</p>
-                <p className='player-link'>ruby</p>
-                <p className='player-link'>blue</p>
-              </div>
-            <p className='jump-hole-link' onClick={this.showHoleLinks}>Jump to Hole</p>
-              <div className='hole-link-container'>
-                <p className='hole-link'>1</p>
-                <p className='hole-link'>2</p>
-                <p className='hole-link'>3</p>
-                <p className='hole-link'>4</p>
-                <p className='hole-link'>5</p>
-                <p className='hole-link'>6</p>
-                <p className='hole-link'>7</p>
-                <p className='hole-link'>8</p>
-                <p className='hole-link'>9</p>
-                <p className='hole-link'>10</p>
-                <p className='hole-link'>11</p>
-                <p className='hole-link'>12</p>
-                <p className='hole-link'>13</p>
-                <p className='hole-link'>14</p>
-                <p className='hole-link'>15</p>
-                <p className='hole-link'>16</p>
-                <p className='hole-link'>17</p>
-                  <p className='hole-link'>18</p>
-              </div>
+            <div className='filter-player-container'>
+              <p className='filter-player-link'>Filter by Player</p>
+              <select>
+                <option value=''></option>
+                <option value='playerOne'>playerOne</option>
+                <option value='playerTwo'>playerTwo</option>
+                <option value='playerThree'>playerThree</option>
+                <option value='playerFour'>playerFour</option>
+              </select>
+            </div>
+
+            <div className='jump-hole-container'>
+              <p className='jump-hole-link'>Jump to Hole</p>
+              <select>
+                <option value=''></option>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+                <option value='13'>13</option>
+                <option value='14'>14</option>
+                <option value='15'>15</option>
+                <option value='16'>16</option>
+                <option value='17'>17</option>
+                <option value='18'>18</option>
+              </select>
+            </div>
+              <button className='reset-button'onClick=''>Reset</button>
+
           </div>
         </div>
       </div>
